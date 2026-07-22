@@ -166,7 +166,7 @@ export const createEditorState = () => ({
     medicalDecision: 'Moderate complexity medical decision-making based on two active chronic problems and prescription drug management.',
   },
   notes: {
-    source: 'SAGE Encounter',
+    source: 'SITES Encounter',
     sourceLabel: 'Provider Visit Note',
     inputMethod: 'Voice transcript',
     endedAt: 'Today · 8:29 AM',

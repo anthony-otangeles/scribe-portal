@@ -373,7 +373,7 @@ function showToast(message) {
               <section class="sidebar-card">
                 <div class="sidebar-card__title"><h3>Sources pulled</h3><small>Synced 08:31 AM</small></div>
                 <div class="preview-sources">
-                  <span><i class="teal"><AppIcon name="activity" :size="13" /></i><b>SAGE Provider Visit Note</b><em>Voice · 04:18</em></span>
+                  <span><i class="teal"><AppIcon name="activity" :size="13" /></i><b>SITES Provider Visit Note</b><em>Voice · 04:18</em></span>
                   <span><i class="purple"><AppIcon name="clipboard" :size="13" /></i><b>PCC Clinical Record</b><em>Current</em></span>
                   <span><i class="blue"><AppIcon name="activity" :size="13" /></i><b>Encounter Transcript</b><em>12:48</em></span>
                   <span><i class="green"><AppIcon name="pill" :size="13" /></i><b>eMAR</b><em>Synced</em></span>

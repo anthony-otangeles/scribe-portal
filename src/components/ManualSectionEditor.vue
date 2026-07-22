@@ -719,7 +719,7 @@ function save() {
 
     <div v-else-if="sectionId === 'notes'" class="editor-block notes-editor">
       <label class="form-field form-field--full"><span>Provider Visit Note / Transcript</span><textarea v-model="draft.text" rows="18" placeholder="Enter the provider's final Visit Note or transcribed encounter audio..." /></label>
-      <small>This source was captured in SAGE Encounter after the provider ended the visit. Agents use it to draft and answer every clinical section.</small>
+      <small>This source was captured in SITES Encounter after the provider ended the visit. Agents use it to draft and answer every clinical section.</small>
     </div>
 
     <div v-else-if="sectionId === 'screenings'" class="editor-block">
