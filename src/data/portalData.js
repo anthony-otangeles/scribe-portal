@@ -280,9 +280,9 @@ export const reviewSections = [
   },
   {
     id: 'notes', label: 'Notes', icon: 'message', confidence: 'High', score: 100,
-    narrative: 'Provider Visit Note received from SITES Encounter after the provider ended the visit.',
+    narrative: 'Provider Visit Note received from SAGE Encounter after the provider ended the visit.',
     facts: [
-      { text: 'The provider’s typed note and final voice transcript were handed to the agents as source evidence.', source: 'SITES Encounter', quote: 'Visit note captured when the provider ended the encounter.', ref: 'Provider Visit Note · encounter handoff' },
+      { text: 'The provider’s typed note and final voice transcript were handed to the agents as source evidence.', source: 'SAGE Encounter', quote: 'Visit note captured when the provider ended the encounter.', ref: 'Provider Visit Note · encounter handoff' },
     ],
   },
   {

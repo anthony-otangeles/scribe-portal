@@ -247,7 +247,7 @@ function navMeta(id) {
             <div><h2>{{ section.label }}</h2><span class="chip" :class="`chip--${confidenceTone(section.confidence)}`">{{ section.id === 'notes' ? 'Source record · 100%' : `${section.score}% confidence` }}</span></div>
             <p v-if="isRequestedSection">The provider accepted the rest of the note and requested one focused update here. Revise only this section, then return the note for final review.</p>
             <p v-else-if="providerRevision">This section was already accepted by the provider and does not need another review.</p>
-            <p v-else-if="section.id === 'notes'">This is the provider's final Visit Note or voice transcript from SITES Encounter. Agents use it as source evidence to draft and answer every clinical section.</p>
+            <p v-else-if="section.id === 'notes'">This is the provider's final Visit Note or voice transcript from SAGE Encounter. Agents use it as source evidence to draft and answer every clinical section.</p>
             <p v-else>The AI completed this section from linked clinical evidence. Edit it only when your judgment is needed to resolve an exception.</p>
           </div>
           <span v-if="isRequestedSection && !revisionEdited" class="provider-revision-chip"><AppIcon name="refresh" :size="12" /> Provider revision</span>
@@ -257,7 +257,7 @@ function navMeta(id) {
         </div>
 
         <div class="section-context" :class="{ 'is-provider-revision': isRequestedSection, 'is-source-record': section.id === 'notes' }" aria-label="Current section status">
-          <span><AppIcon :name="section.id === 'notes' ? 'activity' : providerRevision ? 'checkCheck' : 'bot'" :size="13" /> {{ section.id === 'notes' ? 'Received from SITES Encounter' : providerRevision ? 'Previously reviewed by provider' : 'Filled by Note Agent' }}</span>
+          <span><AppIcon :name="section.id === 'notes' ? 'activity' : providerRevision ? 'checkCheck' : 'bot'" :size="13" /> {{ section.id === 'notes' ? 'Received from SAGE Encounter' : providerRevision ? 'Previously reviewed by provider' : 'Filled by Note Agent' }}</span>
           <span><AppIcon :name="section.id === 'notes' ? 'clipboard' : isRequestedSection ? 'refresh' : 'shield'" :size="13" /> {{ section.id === 'notes' ? 'Source for agent draft' : isRequestedSection ? 'Focused revision requested' : providerRevision ? 'No changes requested' : 'Checked by QA Agent' }}</span>
           <span><AppIcon :name="section.id === 'notes' ? 'bot' : 'clipboard'" :size="13" /> {{ section.id === 'notes' ? 'Used across 17 drafted sections' : `${section.facts.length} linked source${section.facts.length === 1 ? '' : 's'}` }}</span>
         </div>
@@ -415,7 +415,7 @@ function navMeta(id) {
         </button>
         <Transition name="reveal">
           <div v-if="sourcesOpen" class="source-list">
-            <span><i class="teal"><AppIcon name="activity" :size="12" /></i><b>SITES Provider Visit Note</b><em>Voice · 04:18</em></span>
+            <span><i class="teal"><AppIcon name="activity" :size="12" /></i><b>SAGE Provider Visit Note</b><em>Voice · 04:18</em></span>
             <span><i class="purple"><AppIcon name="clipboard" :size="12" /></i><b>PCC Clinical Record</b><em>Current</em></span>
             <span><i class="blue"><AppIcon name="activity" :size="12" /></i><b>Encounter Transcript</b><em>12:48</em></span>
             <span><i class="green"><AppIcon name="pill" :size="12" /></i><b>eMAR</b><em>Synced</em></span>
